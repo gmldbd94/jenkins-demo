@@ -6,7 +6,7 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('openshy4j-project'){
+pipelineJob('theme-park-job'){
     definition{
         cpsScm{
             scm{
