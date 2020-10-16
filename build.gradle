@@ -13,6 +13,7 @@ docker {
     name "${project.name}:${project.version}"
     files "plugins.txt", "seedJob.xml"
 }
+
 Process process
 //format windows
 if (DefaultNativePlatform.getCurrentOperatingSystem().isWindows()){
