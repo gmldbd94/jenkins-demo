@@ -52,3 +52,19 @@ pipelineJob('openshy4j'){
         }
     }
 }
+
+pipelineJob('openshy4j-dockeer'){
+    definition{
+        cpsScm{
+            scm{
+                git{
+                    remote{
+                        url 'https://github.com/sieun4/openshy4j.git'
+                    }
+                    branch 'master'
+                    scriptPath 'Jenkinsfile'
+                }
+            }
+        }
+    }
+}
