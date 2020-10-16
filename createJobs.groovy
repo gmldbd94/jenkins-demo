@@ -36,3 +36,19 @@ pipelineJob('theme-park-job-docker'){
         }
     }
 }
+
+pipelineJob('openshy4j'){
+    definition{
+        cpsScm{
+            scm{
+                git{
+                    remote{
+                        url 'https://github.com/sieun4/openshy4j.git'
+                    }
+                    branch 'master'
+                    scriptPath 'Jenkinsfile-docker'
+                }
+            }
+        }
+    }
+}
