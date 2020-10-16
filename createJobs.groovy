@@ -6,36 +6,36 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('theme-park-job'){
-    definition{
-        cpsScm{
-            scm{
-                git{
-                    remote{
-                        url 'https://github.com/gmldbd94/spring-boot-api-example.git'
-                    }
-                    branch 'master'
-                }
-            }
-        }
-    }
-}
-
-pipelineJob('theme-park-job-docker'){
-    definition{
-        cpsScm{
-            scm{
-                git{
-                    remote{
-                        url 'https://github.com/gmldbd94/spring-boot-api-example.git'
-                    }
-                    branch 'master'
-                    scriptPath 'Jenkinsfile-docker'
-                }
-            }
-        }
-    }
-}
+//pipelineJob('theme-park-job'){
+//    definition{
+//        cpsScm{
+//            scm{
+//                git{
+//                    remote{
+//                        url 'https://github.com/gmldbd94/spring-boot-api-example.git'
+//                    }
+//                    branch 'master'
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//pipelineJob('theme-park-job-docker'){
+//    definition{
+//        cpsScm{
+//            scm{
+//                git{
+//                    remote{
+//                        url 'https://github.com/gmldbd94/spring-boot-api-example.git'
+//                    }
+//                    branch 'master'
+//                    scriptPath 'Jenkinsfile-docker'
+//                }
+//            }
+//        }
+//    }
+//}
 
 pipelineJob('openshy4j'){
     definition{
@@ -46,14 +46,14 @@ pipelineJob('openshy4j'){
                         url 'https://github.com/sieun4/openshy4j.git'
                     }
                     branch 'master'
-                    scriptPath 'Jenkinsfile-docker'
+                    scriptPath 'Jenkinsfile'
                 }
             }
         }
     }
 }
 
-pipelineJob('openshy4j-dockeer'){
+pipelineJob('openshy4j-docker'){
     definition{
         cpsScm{
             scm{
@@ -62,7 +62,7 @@ pipelineJob('openshy4j-dockeer'){
                         url 'https://github.com/sieun4/openshy4j.git'
                     }
                     branch 'master'
-                    scriptPath 'Jenkinsfile'
+                    scriptPath 'Jenkinsfile-docker'
                 }
             }
         }
